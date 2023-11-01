@@ -38,8 +38,8 @@ public class MainTest {
         Node zerind = new Node("Zerind");
 
         // inisialisasi node-node yang ada dengan costnya
-        NodeUCS aradUCS = new NodeUCS(arad, 366);
-        NodeUCS bucharestUCS = new NodeUCS(bucharest, 0);
+        NodeUCS oradeaUCS = new NodeUCS(oradea, 380);
+        NodeUCS urziceniUCS = new NodeUCS(urziceni, 0);
         NodeUCS craiovaUCS = new NodeUCS(craiova, 160);
         NodeUCS dobretaUCS = new NodeUCS(dobreta, 242);
         NodeUCS eforieUCS = new NodeUCS(eforie, 161);
@@ -50,12 +50,12 @@ public class MainTest {
         NodeUCS lugojUCS = new NodeUCS(lugoj, 244);
         NodeUCS mehadiaUCS = new NodeUCS(mehadia, 241);
         NodeUCS neamtUCS = new NodeUCS(neamt, 234);
-        NodeUCS oradeaUCS = new NodeUCS(oradea, 380);
+        NodeUCS aradUCS = new NodeUCS(arad, 366);
         NodeUCS pitestiUCS = new NodeUCS(pitesti, 10);
         NodeUCS rimnicuVilceaUCS = new NodeUCS(rimnicuVilcea, 193);
         NodeUCS sibiuUCS = new NodeUCS(sibiu, 253);
         NodeUCS timisoaraUCS = new NodeUCS(timisoara, 329);
-        NodeUCS urziceniUCS = new NodeUCS(urziceni, 80);
+        NodeUCS bucharestUCS = new NodeUCS(bucharest, 80);
         NodeUCS vasluiUCS = new NodeUCS(vaslui, 199);
         NodeUCS zerindUCS = new NodeUCS(zerind, 374);
 
@@ -131,7 +131,7 @@ public class MainTest {
         // inisialisasi objek AStar
         AStar aStar = new AStar();
         // memanggil fungsi search dari objek aStar dari node aradUCS ke bucharestUCS
-        aStar.search(aradUCS, bucharestUCS);
+        aStar.search(oradeaUCS, urziceniUCS);
         System.out.println();
     }
 }

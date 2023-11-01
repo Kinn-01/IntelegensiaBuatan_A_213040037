@@ -12,18 +12,19 @@ import java.util.List;
  * @author Gilman Arief
  */
 
-//Deklaraso sebuah kelas dengan nama 'Node'
+//Deklarasi sebuah kelas dengan nama 'Node'
 public class Node {
-    //Deklarasi variable instance 'nilai'
+    //Deklarasi variable instance 'nilai' yang bertipe String, digunakan untuk menyimpan nilai dari node
     private String nilai;
-    //Deklarasi variable instance 'tetangga', digunakan untuk menyimpan daftar node suksesor. diinisialisasi sebagai ArrayList kosong
+    //Deklarasi variable instance 'tetangga', yang merupakan daftar(list) dari objek
+    //digunakan untuk menyimpan daftar node suksesor. yang diinisialisasi sebagai ArrayList kosong
     private List<Node> tetangga;
 
-    //Konstruktor kelas 'Node' yang menerima satu argumen yaitu nilai atau identifikasi node
+    //Membuat Konstruktor kelas 'Node' yang menerima satu argumen yaitu "nilai" atau identifikasi node
     public Node(String nilai) {
         //Sebuah ArrayList kosong yang digunakan untuk menginisialisasi variable 'tetangga' yang akan digunakan untuk menyimpan daftar tetangga node ini
         tetangga = new ArrayList<>();
-        //Nilai yang diberikan sebagai argumen digunakan untuk menginisalisasi variable 'nilai' dalam objek 'node'
+        //Menginisalisasi variable 'nilai' dalam objek 'node'
         this.nilai = nilai;
     }
 
